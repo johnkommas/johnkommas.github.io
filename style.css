@@ -381,14 +381,26 @@ main section#home div.contact-icons a::before {
   z-index: -1;
 }
 
+
 main section#home img {
   width: 400px;
-  mix-blend-mode: hue;
   position: absolute;
   right: 7.5%;
   z-index: -100;
-  stroke: 10px red;
+  mix-blend-mode: normal; /* Fix dark effect */
+  filter: none; /* Remove unwanted filters */
+  opacity: 1; /* Ensure full brightness */
+  /*background-color: white; !* Helps avoid dark blending *!*/
 }
+
+/*main section#home img {*/
+/*  width: 400px;*/
+/*  mix-blend-mode: hue;*/
+/*  position: absolute;*/
+/*  right: 7.5%;*/
+/*  z-index: -100;*/
+/*  stroke: 10px red;*/
+/*}*/
 
 main section#about {
   background-color: var(--secondary-darker-color);
