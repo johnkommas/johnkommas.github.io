@@ -393,14 +393,6 @@ main section#home img {
   /*background-color: white; !* Helps avoid dark blending *!*/
 }
 
-/*main section#home img {*/
-/*  width: 400px;*/
-/*  mix-blend-mode: hue;*/
-/*  position: absolute;*/
-/*  right: 7.5%;*/
-/*  z-index: -100;*/
-/*  stroke: 10px red;*/
-/*}*/
 
 main section#about {
   background-color: var(--secondary-darker-color);
