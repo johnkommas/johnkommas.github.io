@@ -1,83 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giannis Kommas - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/668ebba5a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="overlayer"></div>
     <header>
-        <h1>Giannis Kommas - Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="top">
+        <p
+          class="title"
+          id="page-title"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease"
+        >
+          Ioannis E. Kommas.
+        </p>
+        <div
+          id="button"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+            data-aos-delay="200"
+          >
+            <a href="#top" class="active">Home</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+            data-aos-delay="250"
+          >
+            <a href="#about">About</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+            data-aos-delay="300"
+          >
+            <a href="#education">Education</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+            data-aos-delay="350"
+          >
+            <a href="#skills">Skills</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+            data-aos-delay="400"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Data Scientist, Business Intelligence Expert, and ERP Specialist with a passion for automation, data visualization, and software development.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">Python, FastAPI, SQL, Power BI, Tableau</div>
-        <div class="skill">Machine Learning: TensorFlow, Scikit-Learn, Keras</div>
-        <div class="skill">ERP: Entersoft Business Suite, ES Retail</div>
-        <div class="skill">Business Automation & Data Analytics</div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Slack for Business API</h3>
-            <p>Developed an API to enhance real-time data analytics, sales forecasting, and decision-making.</p>
+    <main>
+      <section id="home">
+        <div class="text-content">
+          <h1
+            class="title"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+          >
+            Hi, I'm Ioannis E. Kommas
+          </h1>
+          <div
+            class="skill"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+            data-aos-delay="100"
+          >
+            Business Intelligence
+            <div class="overlayer">
+              Business Intelligence
+              <div class="line"></div>
+            </div>
+          </div>
+          <p
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease"
+            data-aos-delay="200"
+          >
+            Experienced <strong>IT Manager, Data Analyst, and Business Intelligence Specialist</strong> with a strong background in
+        <em>business process automation, software development, and data-driven decision-making</em>.
+          </p>
+          <div
+            class="buttons"
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-delay="300"
+          >
+            <a href="#contact">
+              <button class="hire-me">Hire Me</button>
+            </a>
+            <a href="https://www.linkedin.com/in/ioannis-e-kommas-6a8004a6/" target="_blank" rel="noopener noreferrer">
+              <button class="lets-talk">Let's Talk</button>
+            </a>
+          </div>
+          <div
+            class="contact-icons"
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-delay="500"
+          >
+            <a href="https://www.facebook.com/john.kommas" target="_blank" rel="noopener noreferrer">
+              <i
+                class="fa-brands fa-facebook-f"
+                data-aos="fade-right"
+                data-aos-easing="ease"
+                data-aos-delay="550"
+              ></i>
+            </a>
+            <a href="https://x.com/JohnKommas" target="_blank" rel="noopener noreferrer">
+              <i
+                class="fa-brands fa-twitter"
+                data-aos="fade-right"
+                data-aos-easing="ease"
+                data-aos-delay="600"
+              ></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ioannis-e-kommas-6a8004a6/" target="_blank" rel="noopener noreferrer">
+              <i
+                class="fa-brands fa-linkedin-in"
+                data-aos="fade-right"
+                data-aos-easing="ease"
+                data-aos-delay="650"
+              ></i>
+            </a>
+          </div>
         </div>
-        <div class="project">
-            <h3>ERP Implementation</h3>
-            <p>Successfully deployed and optimized ERP solutions using Entersoft Business Suite.</p>
-        </div>
-    </section>
+        <img
+          src="images/hat.png"
+          alt="Ioannis E. Kommas"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-delay="100"
+        />
+      </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience">
-            <h3>Technical Trainer - KEK Heraklion</h3>
-            <p>Providing ERP and business intelligence training.</p>
-        </div>
-        <div class="experience">
-            <h3>IT Manager - Koutoulakis M. Atsalis A. O.E.</h3>
-            <p>Leading IT and business automation projects.</p>
-        </div>
-    </section>
+      <section id="about">
+    <h2 class="title" data-aos="fade-down">
+        About <span>Me</span>
+    </h2>
+    <img src="images/selfie.png" alt="Ioannis E. Kommas" data-aos="fade-right" data-aos-delay="100" />
+    <h3 data-aos="fade-right" data-aos-delay="200">IT Manager | Data Analyst | BI Specialist</h3>
 
-    <section id="certifications">
-        <h2>Certifications & Education</h2>
-        <div class="certification">University of Piraeus - Bachelor in Electronic Computer Systems</div>
-        <div class="certification">JetBrains - Python & MySQL Certifications</div>
-        <div class="certification">DataCamp - Machine Learning, Data Science</div>
-    </section>
+    <p data-aos="fade-right" data-aos-delay="300">
+        Experienced <strong>IT Manager, Data Analyst, and Business Intelligence Specialist</strong> with a strong background in
+        <em>business process automation, software development, and data-driven decision-making</em>. Adept at
+        <strong>ERP system implementation, IT infrastructure management, and business intelligence solutions</strong>, I specialize
+        in leveraging <em>data analytics and automation</em> to optimize business operations.
+    </p>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
+    <!-- Hidden Additional Info -->
+    <div id="more-info" style="display: none;">
+    <p data-aos="fade-up" data-aos-delay="300">
+        I take a hands-on approach to problem-solving and excel in:
+    </p>
+      <p data-aos="fade-up" data-aos-delay="300">
+        <strong>Custom Software Development:</strong> Building tailored applications that enhance business efficiency.
+        <strong>Business Intelligence & Data Visualization:</strong> Designing interactive BI dashboards to drive data-driven decisions.
+        <strong>Cloud & Database Management:</strong> Expertise in Python, SQL, and cloud-based infrastructure solutions.
+        <strong>Enterprise System Integration:</strong> Seamlessly integrating ERP, automation, and IT infrastructure.
+        <strong>Continuous Learning & Innovation:</strong> Always exploring new technologies to push the boundaries of innovation.
+      </p>
+    <p data-aos="fade-up" data-aos-delay="300">
+        Passionate about <strong>leveraging technology</strong> to solve complex business challenges, enhance operational efficiency, and optimize decision-making processes.
+    </p>
+</div>
+
+    <!-- Read More Button -->
+    <div>
+        <button id="readMoreBtn" onclick="toggleReadMore()">Read More</button>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="title" data-aos="fade-down">
+        My <span>Journey</span>
+    </h2>
+    <div class="content">
+
+        <!-- Education Section -->
+        <div class="container education-container">
+            <h3 class="title" data-aos="fade-right" data-aos-delay="100">
+                Education
+            </h3>
+            <div class="design-container" data-aos="fade-right" data-aos-delay="200">
+                <div class="line">
+                    <div class="circle first-circle"></div>
+                    <div class="circle second-circle"></div>
+                    <div class="circle third-circle"></div>
+                </div>
+                <div class="box-container">
+                    <div class="box first-box">
+                        <div class="date-container">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="date">1999 - 2003</p>
+                        </div>
+                        <h3 class="title">Bachelor's Degree - University of Piraeus</h3>
+                        <p class="description">
+                            Earned a degree in **Engineering of Electronic Computer Systems**, specializing in software development, database management, and business intelligence solutions.
+                        </p>
+                    </div>
+                    <div class="box second-box">
+                        <div class="date-container">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="date">Various Years</p>
+                        </div>
+                        <h3 class="title">Professional Certifications</h3>
+                        <p class="description">
+                            Acquired multiple certifications in **Python, MySQL, Data Analysis, Machine Learning, Power BI, ERP, and Digital Marketing** from institutions like **JetBrains, DataCamp, Google, and KEK Heraklion**.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="container experience-container">
+            <h3 class="title" data-aos="fade-left" data-aos-delay="100">
+                Experience
+            </h3>
+            <div class="design-container" data-aos="fade-left" data-aos-delay="200">
+                <div class="line">
+                    <div class="circle first-circle"></div>
+                    <div class="circle second-circle"></div>
+                    <div class="circle third-circle"></div>
+                </div>
+                <div class="box-container">
+                    <div class="box first-box">
+                        <div class="date-container">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="date">2012 - Present</p>
+                        </div>
+                        <h3 class="title">IT Manager - Koutoulakis M. Atsalis A. O.E.</h3>
+                        <p class="description">
+                            Overseeing IT operations, implementing **ERP Entersoft Business Suite**, developing **custom software solutions**, and managing **business intelligence dashboards** for data-driven decision-making.
+                        </p>
+                    </div>
+                    <div class="box second-box">
+                        <div class="date-container">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="date">2018 - Present</p>
+                        </div>
+                        <h3 class="title">Technical Trainer - KEK Heraklion</h3>
+                        <p class="description">
+                            Conducting training on **ERP systems, data analytics, and business automation**, empowering professionals with hands-on skills in **Power BI, SQL, and Python automation**.
+                        </p>
+                    </div>
+                    <div class="box third-box">
+                        <div class="date-container">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="date">2006 - 2012</p>
+                        </div>
+                        <h3 class="title">Sales & IT Support - Aslanidis Electronet</h3>
+                        <p class="description">
+                            Provided technical support, optimized IT infrastructure, and assisted customers with **product recommendations, inventory management, and sales tracking**.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title" data-aos="fade-down">
+        My <span>Skills</span>
+    </h2>
+    <div class="content">
+
+        <!-- Coding Skills -->
+        <div class="container coding-skills-container">
+            <h3 class="title" data-aos="fade-right" data-aos-delay="100">
+                Coding Skills
+            </h3>
+            <div class="design-container" data-aos="fade-right" data-aos-delay="200">
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">Python</p>
+                        <p class="percentage">90%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">SQL (Microsoft SQL Server, MySQL, PostgreSQL)</p>
+                        <p class="percentage">85%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">JavaScript</p>
+                        <p class="percentage">50%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">FastAPI & Backend Development</p>
+                        <p class="percentage">75%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Skills -->
+        <div class="container professional-skills-container">
+            <h3 class="title" data-aos="fade-left" data-aos-delay="100">
+                Professional Skills
+            </h3>
+            <div class="design-container" data-aos="fade-left" data-aos-delay="200">
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">Business Intelligence (Power BI, Tableau, DAX)</p>
+                        <p class="percentage">90%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">ERP Systems (Entersoft Business Suite, ES Retail)</p>
+                        <p class="percentage">85%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">Machine Learning (Scikit-Learn, TensorFlow, Keras)</p>
+                        <p class="percentage">70%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+                <div class="skill">
+                    <h3 class="header">
+                        <p class="title">Cybersecurity & IT Infrastructure</p>
+                        <p class="percentage">65%</p>
+                    </h3>
+                    <div class="percentage-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section id="contact" class="last-section">
+        <h2 class="title" data-aos="fade-down">
+          Contact
+          <span>Me!</span>
+        </h2>
+
+        <form action="https://formsubmit.co/johnkommas@gmail.com" method="POST" id="contact-form">
+          <div class="input-container">
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              placeholder="Full Name"
+              required
+              minlength="6"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease"
+            />
+            <input
+              type="email"
+              id="email-address"
+              name="email"
+              placeholder="Email Address"
+              required
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease"
+            />
+            <input
+              type="tel"
+              id="mobile-number"
+              name="mobile"
+              placeholder="Mobile Number"
+              required
+              minlength="6"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            />
+            <input
+              type="text"
+              id="email-subject"
+              name="subject"
+              placeholder="Email Subject"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+              minlength="1"
+              data-aos="zoom-in"
+              data-aos-easing="ease"
+              data-aos-delay="200"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
         </form>
-    </section>
+      </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Giannis Kommas | Built with passion</p>
+      <p
+        class="copyright"
+        data-aos="fade-right"
+        data-aos-easing="ease"
+        data-aos-offset="40"
+      >
+        Copyright &copy; 2025 by Ioannis E. Kommas | All Rights Reserved
+      </p>
+      <nav data-aos="fade-upy" data-aos-easing="ease" data-aos-offset="40">
+        <a href="#top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </nav>
     </footer>
-</body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js" defer></script>
+  </body>
 </html>
