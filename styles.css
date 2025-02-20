@@ -1,57 +1,94 @@
-/*
- * Copyright (c) Ioannis E. Kommas 2025. All Rights Reserved
- */
-
-/* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
 }
 
-/* Navbar */
-.navbar {
-  background: #333;
-  color: #fff;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar .logo {
-  font-size: 24px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.nav-links {
-  list-style: none;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
 }
 
-.nav-links li {
-  display: inline-block;
+nav ul li a:hover {
+    color: #f4a261;
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
+section {
+    padding: 100px 20px 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
+.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
-.hero h2 {
-  font-size: 36px;
+.project, .experience, .skill, .certification {
+    background: #1e1e1e;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
-/* About Section */
-.about-section, .skills-section, .projects-section, .contact-section {
-   padding:40
+.project:hover, .experience:hover, .skill:hover, .certification:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background: #f4a261;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff7b00;
+}
+
+footer {
+    background: #000;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
