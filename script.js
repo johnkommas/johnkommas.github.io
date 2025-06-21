@@ -49,29 +49,25 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".skill:not(.overlayer)").forEach(skill => {
     const percentageText = skill.querySelector(".percentage");
     if (!percentageText) {
-      console.warn("❌ Percentage text not found for:", skill);
       return;
     }
 
     const percentage = parseInt(percentageText.textContent.replace("%", ""), 10);
     if (isNaN(percentage)) {
-      console.warn("❌ Invalid percentage value for:", skill);
       return;
     }
 
     const fillBar = skill.querySelector(".percentage-line .fill");
     if (!fillBar) {
-      console.warn("❌ Fill bar not found inside percentage-line!", skill);
       return;
     }
 
-    // ✅ Force repaint before applying width (Safari fix)
+    // Force repaint before applying width (Safari fix)
     fillBar.style.display = "block";
     fillBar.offsetWidth;
 
     setTimeout(() => {
       fillBar.style.width = `${percentage}%`;
-      console.log(`✅ Progress bar set to ${percentage}% for:`, skill);
     }, 500);
   });
 });
